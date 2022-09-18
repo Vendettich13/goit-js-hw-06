@@ -4,8 +4,8 @@ const textEl = document.querySelector("#text");
 
 inputEl.value = 16;
 
-inputEl.addEventListener("input", fn);
+inputEl.addEventListener("input", changeFontSize);
 
-function fn() {
+function changeFontSize() {
   textEl.style.fontSize = inputEl.value + "px";
 }

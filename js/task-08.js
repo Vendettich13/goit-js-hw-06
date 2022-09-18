@@ -7,17 +7,15 @@ function onFormSubmit(event) {
   const formEl = event.currentTarget.elements;
   const mail = formEl.email.value;
   const password = formEl.password.value;
+  let formData = {};
 
   if (mail === "" || password === "") {
-    alert("Please fill empty fields");
+    return alert("Please fill empty fields");
   }
-
-  const formData = {
+  formData = {
     mail,
     password,
   };
-
   console.log(formData);
-
   form.reset();
 }
